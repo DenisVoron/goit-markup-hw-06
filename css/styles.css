@@ -702,6 +702,12 @@ img {
 .address-wrapper:not(:last-child) {
   margin-right: 70px;
 }
+
+/*соц мережі футер*/
+.join-wrapper {
+  margin-right: 93px;
+}
+
 .footer-title {
   margin-bottom: 20px;
 
@@ -712,8 +718,6 @@ img {
 
   color: var(--accent-txt-cl);
 }
-
-/*соц мережі футер*/
 .join-list {
   display: flex;
 }
@@ -742,6 +746,92 @@ img {
   background-color: var(--secondary-txt-cl);
 }
 
+/*футер підписка*/
+.mailing-title {
+  margin-bottom: 20px;
+
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  color: var(--accent-txt-cl);
+}
+.mailing-form {
+  display: flex;
+}
+.form-input {
+  width: 358px;
+  height: 50px;
+
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+  
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  background-color: var(--main-bg-cl);
+}
+.form-input::placeholder {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+
+  letter-spacing: 0.03em;
+  
+  color: var(--footer-txt-cl);
+}
+.mailing-button {
+  position: relative;
+  width: 200px;
+  height: 50px;
+
+  padding: 0px;
+  
+  border: transparent;
+  
+  background-color: var(--secondary-txt-cl);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+.mailing-txt {
+  position: absolute;
+  width: 109px;
+  height: 30px;
+  top: 10px;
+  left: 29px;
+
+  margin-right: 10px;
+  
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+
+  letter-spacing: 0.06em;
+
+  color: var(--accent-txt-cl);
+}
+.mailing-icon {
+  position: absolute;
+
+  top: 13px;
+  right: 28px;
+
+  width: 24px;
+  height: 24px;
+
+  fill: var(--accent-txt-cl);
+}
+/*лого футер*/
 .container-logo {
   margin-bottom: 20px;
 }
