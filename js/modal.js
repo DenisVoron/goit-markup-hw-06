@@ -19,4 +19,19 @@ const { height: headerHeight } = document
        .getBoundingClientRect( );
 
   document.body.style.paddingTop = `${headerHeight}px`;
-  })();
+})();
+  
+(() => {
+  document
+    .querySelector(`.call-form`)
+    .addEventListener("submit", e => {
+      e.preventdefault();
+
+      new FormData(e.currentTarget).forEach((value, name) =>
+        console.log(`${name}: ${value}`),
+      );
+
+      e.currentTarget.reset();
+    });
+
+})();
