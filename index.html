@@ -456,29 +456,33 @@
         <b class="form-contents">Оставьте свои данные, мы вам перезвоним</b>
 
         <div class="form-group">
-          <div class="input-wrapper">
             <label class="label" for="name">Имя</label>
+            <span class="input-wrapper">
             <input type="text" class="call-input" name="name" id="name" />
-          </div>
-          <svg class="icon-call" width="12" height="12">
-            <use href="./images/icon/sprite-all.svg#form-name"></use>
-          </svg>
+            <svg class="icon-call" width="12" height="12">
+              <use href="./images/icon/sprite-all.svg#form-name"></use>
+            </svg>
+          </span>
         </div>
 
         <div class="form-group">
           <label class="label" for="tel">Телефон</label>
+          <span class="input-wrapper">
+            <svg class="icon-call" width="13" height="13">
+              <use href="./images/icon/sprite-all.svg#form-phone"></use>
+            </svg>
           <input type="tel" class="call-input" name="tel" id="tel" />
-          <svg class="icon-call" width="13" height="13">
-            <use href="./images/icon/sprite-all.svg#form-phone"></use>
-          </svg>
+          </span>
         </div>
 
         <div class="form-group">
           <label class="label" for="mail">Почта</label>
+          <span class="input-wrapper">
+            <svg class="icon-call" width="15" height="12">
+              <use href="./images/icon/sprite-all.svg#form-mail"></use>
+            </svg>
           <input type="email" class="call-input" name="mail" id="mail" />
-          <svg class="icon-call" width="15" height="12">
-            <use href="./images/icon/sprite-all.svg#form-mail"></use>
-          </svg>
+          </span>
         </div>
 
         <div class="form-comment">
@@ -494,7 +498,7 @@
         <div class="agreement">
           <input type="checkbox" name="agreement" id="agreement" />
           <label class="agreement-label" for="agreement">
-            Соглашаюсь с рассылкой и принимаю Условия договора
+            Соглашаюсь с рассылкой и принимаю<a href="">Условия договора</a>
           </label>
         </div>
 
