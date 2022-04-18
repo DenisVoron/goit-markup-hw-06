@@ -748,6 +748,8 @@ img {
 
 /*футер підписка*/
 .mailing-title {
+  display: block;
+
   margin-bottom: 20px;
 
   font-family: var(--main-font);
@@ -788,7 +790,7 @@ img {
   color: var(--footer-txt-cl);
 }
 .form-input:focus {
-  border-color: #2196f3;
+  border-color: var(--secondary-txt-cl);
 }
 .mailing-button {
   position: relative;
@@ -959,9 +961,6 @@ img {
   position: relative;
 }
 
-/*.agreement input[type="checkbox"] {
-}*/
-
 .call-input {
   padding: 12px 12px 12px 42px;
 
@@ -1029,10 +1028,7 @@ img {
   border-color: transparent;
 }
 
-/*.agreement:focus {
-  border-color: var(--secondary-txt-cl);
-}*/
-
+/*кнопка закрітие модалки*/
 .clos-modal {
   position: absolute;
 
