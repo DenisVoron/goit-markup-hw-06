@@ -991,14 +991,17 @@ img {
 .agreement {
   display: flex;
   align-items: center;
+  justify-content: center;
 
   margin-bottom: 30px;
 }
 .agreement-label {
   display: flex;
   align-items: center;
-  margin-right: auto;
-  margin-left: auto;
+  justify-content: center;
+
+  /*margin-right: auto;
+  margin-left: auto;*/
 }
 .checkbox {
   position: absolute;
@@ -1044,12 +1047,13 @@ img {
   box-sizing: border-box;
   border-radius: 50%;
 }
+.clos-modal:hover,
+.clos-modal:focus {
+  fill: var(--secondary-txt-cl);
+}
 .clos-icon {
   width: 11px;
   height: 11px;
-}
-.clos-icon:hover {
-  fill: var(--secondary-txt-cl);
 }
 
 .call-sabmit {
@@ -1058,6 +1062,8 @@ img {
   border: transparent;
   margin-left: auto;
   margin-right: auto;
+
+  cursor: pointer;
 
   width: 200px;
   height: 50px;
@@ -1076,6 +1082,8 @@ img {
 }
 
 textarea {
+  display: block;
+
   resize: none;
   padding: 12px 16px;
   
