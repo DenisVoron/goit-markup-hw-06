@@ -699,6 +699,9 @@ img {
   display: flex;
   align-items: baseline;
 }
+.address-wrapper {
+  flex-grow: 1;
+}
 .address-wrapper:not(:last-child) {
   margin-right: 70px;
 }
@@ -764,11 +767,13 @@ img {
 .mailing-form {
   display: flex;
 }
+.form-label {
+  margin-right: 12px;
+}
 .form-input {
   width: 358px;
   height: 50px;
 
-  margin-right: 12px;
   padding: 15px 16px;
   
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -793,7 +798,10 @@ img {
   border-color: var(--secondary-txt-cl);
 }
 .mailing-button {
-  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
   width: 200px;
   height: 50px;
 
@@ -806,12 +814,6 @@ img {
   border-radius: 4px;
 }
 .mailing-txt {
-  position: absolute;
-  width: 109px;
-  height: 30px;
-  top: 10px;
-  left: 29px;
-
   margin-right: 10px;
   
   font-family: var(--main-font);
@@ -824,11 +826,6 @@ img {
   color: var(--accent-txt-cl);
 }
 .mailing-icon {
-  position: absolute;
-
-  top: 13px;
-  right: 28px;
-
   width: 24px;
   height: 24px;
 
@@ -999,9 +996,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /*margin-right: auto;
-  margin-left: auto;*/
 }
 .checkbox {
   position: absolute;
@@ -1022,7 +1016,9 @@ img {
 }
 .icon-mark {
   margin-right: 7px;
-  border: 0.2px solid var(--title-txt-cl);
+  border: 1.2px solid var(--title-txt-cl);
+  border-radius: 2px;
+
   fill: var(--accent-txt-cl);
 }
 .checkbox:checked + .icon-mark {
@@ -1031,7 +1027,7 @@ img {
   border-color: transparent;
 }
 
-/*кнопка закрітие модалки*/
+/*кнопка закриття модалки*/
 .clos-modal {
   position: absolute;
 
@@ -1051,6 +1047,7 @@ img {
 .clos-modal:focus {
   fill: var(--secondary-txt-cl);
 }
+
 .clos-icon {
   width: 11px;
   height: 11px;
